@@ -21,7 +21,7 @@ Your goal is doing A/B testing or Canary deployment testing: part of the traffic
 You are testing between two (or more) different, **complete** versions of the entire content (not a single element, e.g. the image of the logo).
 Let's call them *main* and *experiment*. There might be multiple experiments as an extention.
 
-Each version of the website is served by a separate URL (e.g. a separate S3 Bucket). They are configured as different *Origins* in the CloudFormation Distribution.
+Each version of the website is served by a separate URL (e.g. a separate S3 Bucket). They are configured as different *Origins* in the CloudFront Distribution.
 
 You want to have a user sticking on the same version of content for the duration of her/his "browser" session(remember there is no login.
 You do not want to have content randomly served from diferent versions at each request.
